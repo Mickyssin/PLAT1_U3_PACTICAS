@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EVA3_6_PERCISTENCIA2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7sK-BV-KCj">
+                                <rect key="frame" x="18" y="28" width="564" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OlX-ER-icn">
+                                <rect key="frame" x="18" y="78" width="564" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Bx-FC-GxO">
+                                <rect key="frame" x="18" y="127" width="564" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taG-gV-XIx">
+                                <rect key="frame" x="8" y="176" width="71" height="30"/>
+                                <state key="normal" title="GUARDAR"/>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="liG-2R-TRK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBn-aD-oEn">
+                                <rect key="frame" x="8" y="214" width="86" height="30"/>
+                                <state key="normal" title="VIZUALIZAR"/>
+                                <connections>
+                                    <action selector="btnVisualizar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1HB-5e-7IU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yDJ-Tk-zEj">
+                                <rect key="frame" x="20" y="300" width="560" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="INFORMACION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-17-Hxy">
+                                <rect key="frame" x="8" y="261" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TBn-aD-oEn" firstAttribute="top" secondItem="taG-gV-XIx" secondAttribute="bottom" constant="8" id="1I3-d1-a2t"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cWg-17-Hxy" secondAttribute="leading" id="6R7-U4-ePu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yDJ-Tk-zEj" secondAttribute="bottom" constant="20" id="8Qu-cE-M1g"/>
+                            <constraint firstItem="8Bx-FC-GxO" firstAttribute="top" secondItem="OlX-ER-icn" secondAttribute="bottom" constant="19" id="Eaq-WC-ypS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TBn-aD-oEn" secondAttribute="leading" id="H1z-n0-3TU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="taG-gV-XIx" secondAttribute="leading" id="Id4-62-WCo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yDJ-Tk-zEj" secondAttribute="trailing" id="Ozu-MK-8wk"/>
+                            <constraint firstItem="cWg-17-Hxy" firstAttribute="top" secondItem="TBn-aD-oEn" secondAttribute="bottom" constant="17" id="QDc-Sa-NKp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="OlX-ER-icn" secondAttribute="leading" id="RGI-cH-HcE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7sK-BV-KCj" secondAttribute="leading" id="U3l-HD-rAc"/>
+                            <constraint firstItem="7sK-BV-KCj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="X4z-t6-h5z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7sK-BV-KCj" secondAttribute="trailing" id="XlV-mt-R8b"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yDJ-Tk-zEj" secondAttribute="leading" id="ffo-el-4QA"/>
+                            <constraint firstItem="taG-gV-XIx" firstAttribute="top" secondItem="8Bx-FC-GxO" secondAttribute="bottom" constant="19" id="mZF-sr-dNF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Bx-FC-GxO" secondAttribute="trailing" id="pEw-jT-Aut"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OlX-ER-icn" secondAttribute="trailing" id="pxK-NT-C59"/>
+                            <constraint firstItem="yDJ-Tk-zEj" firstAttribute="top" secondItem="cWg-17-Hxy" secondAttribute="bottom" constant="18" id="qVi-vQ-PON"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8Bx-FC-GxO" secondAttribute="leading" id="tv8-tt-vgy"/>
+                            <constraint firstItem="OlX-ER-icn" firstAttribute="top" secondItem="7sK-BV-KCj" secondAttribute="bottom" constant="20" id="wIY-FD-32g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblInfo" destination="cWg-17-Hxy" id="1pl-jd-2dU"/>
+                        <outlet property="txtVwDatos" destination="yDJ-Tk-zEj" id="rFP-GX-TFs"/>
+                        <outletCollection property="misSliders" destination="7sK-BV-KCj" collectionClass="NSMutableArray" id="0M3-dn-TLF"/>
+                        <outletCollection property="misSliders" destination="OlX-ER-icn" collectionClass="NSMutableArray" id="GCG-ti-YA3"/>
+                        <outletCollection property="misSliders" destination="8Bx-FC-GxO" collectionClass="NSMutableArray" id="Jic-Ls-5Ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
